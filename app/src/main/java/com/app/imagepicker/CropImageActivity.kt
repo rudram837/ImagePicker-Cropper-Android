@@ -27,7 +27,6 @@ class CropImageActivity : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
-        // ✅ GET URI
         val uri = intent.getStringExtra("uri")
         if (uri != null) {
             cropImageView.setImageUriAsync(Uri.parse(uri))

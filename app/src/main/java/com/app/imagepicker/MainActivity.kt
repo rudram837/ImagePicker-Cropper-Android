@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             val uri = it.data?.data
 
             val intent = Intent(this, CropImageActivity::class.java)
-            intent.putExtra("uri", uri.toString()) // ✅ SAME KEY
+            intent.putExtra("uri", uri.toString())
 
             getCropImage.launch(intent)
         }
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 val stream = ByteArrayInputStream(imageByte)
                 val bitmap = BitmapFactory.decodeStream(stream)
 
-                imageview.setImageBitmap(bitmap) // ✅ FIXED
+                imageview.setImageBitmap(bitmap)
             }
         }
     }
