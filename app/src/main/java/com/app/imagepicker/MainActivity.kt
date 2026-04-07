@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // 🔹 Pick Image
     private val pikImage = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
@@ -42,7 +41,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // 🔹 Get Cropped Image
     private val getCropImage = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
